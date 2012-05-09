@@ -1,0 +1,13 @@
+D:\yfann\YfannTools\YfannTools\bin\Debug\YfannTools.exe
+D:\yfann\YfannTools\YfannTools\bin\Debug\YfannTools.pdb
+D:\yfann\YfannTools\YfannTools\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\yfann\YfannTools\YfannTools\obj\x86\Debug\MainWindow.baml
+D:\yfann\YfannTools\YfannTools\obj\x86\Debug\MainWindow.g.cs
+D:\yfann\YfannTools\YfannTools\obj\x86\Debug\App.g.cs
+D:\yfann\YfannTools\YfannTools\obj\x86\Debug\YfannTools_MarkupCompile.cache
+D:\yfann\YfannTools\YfannTools\obj\x86\Debug\YfannTools.g.resources
+D:\yfann\YfannTools\YfannTools\obj\x86\Debug\YfannTools.Properties.Resources.resources
+D:\yfann\YfannTools\YfannTools\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\yfann\YfannTools\YfannTools\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\yfann\YfannTools\YfannTools\obj\x86\Debug\YfannTools.exe
+D:\yfann\YfannTools\YfannTools\obj\x86\Debug\YfannTools.pdb

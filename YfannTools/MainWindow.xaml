@@ -1,0 +1,38 @@
+﻿<Window x:Class="YfannTools.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <StackPanel 
+                Orientation="Horizontal"
+                Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2">
+                <Button Content="解析" 
+                        Tag="Parse"
+                        Click="Button_Click"/>
+            </StackPanel>
+            <ScrollViewer Grid.Row="1"
+                          Grid.Column="0">
+
+                <TextBox x:Name="textSource"
+                         TextWrapping="Wrap"
+                         AcceptsReturn="True" />
+            </ScrollViewer>
+            <ScrollViewer Grid.Row="1"
+                          Grid.Column="1">
+                <TextBox x:Name="textTarget"
+                         TextWrapping="Wrap"
+                         AcceptsReturn="True" />
+            </ScrollViewer>
+
+        </Grid>
+    </Grid>
+</Window>
