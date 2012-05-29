@@ -36,13 +36,26 @@ namespace YfannTools
                 using (StringReader reader = new StringReader(str))
                 {
                     string line;
-                    while((line=reader.ReadLine())!=null)
+                    if (chbCsharpType.IsChecked.Value)
                     {
-                        line = Regex.Replace(line, @"""","\"\"");
-                        line = Regex.Replace(line, @"^\s+(?=[<|\W])", "");
-                        line = Regex.Replace(line, @"\s+$", "");
-                        line = "sb.Append(@\"" + line + "\");";
-                        sb.AppendLine(line);
+                        while ((line = reader.ReadLine()) != null)
+                        {
+                            line = Regex.Replace(line, @"""", "\"\"");
+                            line = Regex.Replace(line, @"^\s+(?=[<|\W])", "");
+                            line = Regex.Replace(line, @"\s+$", "");
+                            line = "sb.Append(@\"" + line + "\");";
+                            sb.AppendLine(line);
+                        }
+                    }
+                    if (chbSqlType.IsChecked.Value)
+                    {
+                        while ((line = reader.ReadLine()) != null)
+                        {
+                            line = Regex.Replace(line,@"^\s+","");
+                            line = Regex.Replace(line,@"\s+$","");
+                            line = "+N' " + line + " '";
+                            sb.AppendLine(line);
+                        }
                     }
                 }
                 textTarget.Text = sb.ToString();
